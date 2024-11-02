@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Produksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Produksi</h1>
+        <button onclick="fetchAllData()">Tampilkan Semua Data</button>
+        <button onclick="clearTable()">Kosongkan Data</button>
+        <br><br>
+        <input type="text" id="tahun" placeholder="Tahun">
+        <input type="text" id="jenis" placeholder="Jenis">
+        <input type="text" id="hasil" placeholder="Hasil">
+        <button onclick="filterData()">Filter Data</button>
+        <button onclick="addData()">Tambah Data</button>
+        <br><br>
+        <table class="table" id="dataTable">
+            <thead>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Jenis</th>
+                    <th>Hasil</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
